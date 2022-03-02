@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Jaloouu/static/css/main.05febe18.css",
-    "main.js": "/Jaloouu/static/js/main.be7b3a97.js",
+    "main.js": "/Jaloouu/static/js/main.02b2efc3.js",
     "static/js/787.c86e0e06.chunk.js": "/Jaloouu/static/js/787.c86e0e06.chunk.js",
+    "static/media/nonAcademic.png": "/Jaloouu/static/media/nonAcademic.45e046a2c925813d853e.png",
     "static/media/profpic2.jpg": "/Jaloouu/static/media/profpic2.eba1d4d9bcc14a234526.jpg",
     "static/media/htmlpng.png": "/Jaloouu/static/media/htmlpng.59ffbf23a673990dc53d.png",
     "static/media/kagglePhyton.png": "/Jaloouu/static/media/kagglePhyton.9a7773be46579e537628.png",
@@ -20,11 +21,11 @@
     "static/media/logo.svg": "/Jaloouu/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Jaloouu/index.html",
     "main.05febe18.css.map": "/Jaloouu/static/css/main.05febe18.css.map",
-    "main.be7b3a97.js.map": "/Jaloouu/static/js/main.be7b3a97.js.map",
+    "main.02b2efc3.js.map": "/Jaloouu/static/js/main.02b2efc3.js.map",
     "787.c86e0e06.chunk.js.map": "/Jaloouu/static/js/787.c86e0e06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05febe18.css",
-    "static/js/main.be7b3a97.js"
+    "static/js/main.02b2efc3.js"
   ]
 }
