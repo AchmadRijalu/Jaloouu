@@ -313,7 +313,51 @@ function Content(props) {
                             
                         
                         </div> 
+                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="2">
+                            <div className='W-full h-max p-3 font-reem text-2xl '>
+                                 <h1>
+                                 Semester 2
+                                 </h1>
+                                 
+                            </div>
+                            <div className='w-max h-max p-1 px-3  flex flex-col justify-between space-y-5 border-b-2 '>
+                                <div>
+                                <h1 className='font-bold font-robot text-3xl'>
+                                Heromart-Prototype
+                                </h1>
+                                <h2 className='text-sm font-semibold text-slate-500 font-robot'>
+                                    Dicoding Dasar Pemrograman Web Final Submission
+                                </h2>
+                                </div>
+                                <div className='flex flex-row items-center font-reem text-sm space-x-2 w-full'>
+                                    <FontAwesomeIcon icon={faUsers} className='text-slate-600 mr-3'>
 
+                                    </FontAwesomeIcon>
+                                    N/A
+                                </div>
+                                
+                                
+                            </div>
+                            <div className='w-max h-max  p-2 px-4 flex flex-row items-center text-2xl space-x-3'>
+                                    <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon>
+                                    <FontAwesomeIcon icon={faCss3Alt}></FontAwesomeIcon>
+                                    <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div className='w-full h-max  flex justify-center mt-2 mb-2'>
+                                <button className='p-3 sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://github.com/AchmadRijalu/Heromart-Prototype")}} type="button">
+                                    <FontAwesomeIcon icon={faGithub} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Repository
+                                    </h1>
+                                  </span>
+                                </button>
+                            </div>
+                        
+                        </div> 
                         <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="2">
                             <div className='W-full h-max p-3 font-reem text-2xl '>
                                  <h1>
