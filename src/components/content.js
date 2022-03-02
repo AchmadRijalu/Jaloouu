@@ -26,7 +26,9 @@ import { faJs } from '@fortawesome/free-brands-svg-icons'
 import { faAndroid } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faUnity } from '@fortawesome/free-brands-svg-icons'
-
+import { faDesktop } from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
 import { useEffect } from 'react'
 
 function Content(props) {
@@ -254,7 +256,7 @@ function Content(props) {
                 </div>
                 <div className='w-full min-h-screen flex flex-col mt-4'id="project">                  
                     <div className='w-full h-24   flex flex-col justify-center p-7'>
-                        <h1 className='text-white text-4xl font-robot font-bold'>
+                        <h1 className='text-white text-4xl font-robot font-bold '>
                             Projects
                         </h1>
                     </div>
@@ -265,7 +267,7 @@ function Content(props) {
                         <Carousel breakPoints={breakpoint} className="gap-x-4" indicators={false} infiniteLoop={true}>
 
 
-                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                        <div className='w-full h-max  bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
                             
                             <div className='W-full h-max p-3 font-reem text-2xl '>
                                  <h1>
@@ -296,9 +298,19 @@ function Content(props) {
                             <div className='w-max h-max  p-2 px-4 flex flex-row items-center text-2xl' >
                                     <FontAwesomeIcon icon={faJava}></FontAwesomeIcon>
                                 </div>
-                            <div>
-
+                            
+                                <div className='w-full h-max  flex justify-center mt-2 mb-2'>
+                                <button className='p-3 sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700  flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://drive.google.com/file/d/1E9oeh3TJgqj7xwpCLJ747cBH8IhxRPzM/view?usp=sharing")}} type="button">
+                                    <FontAwesomeIcon icon={faDownload} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      Download Application
+                                    </h1>
+                                  </span>
+                                </button>
                             </div>
+
+                            
                         
                         </div> 
 
@@ -340,6 +352,16 @@ function Content(props) {
                             <div>
 
                             </div>
+                            <div className='w-full h-max  flex justify-center mt-2 mb-2'>
+                                <button className='p-3 sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://github.com/AchmadRijalu/GaSe-Git-Hub")}} type="button">
+                                    <FontAwesomeIcon icon={faGithub} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Repository
+                                    </h1>
+                                  </span>
+                                </button>
+                            </div>
                         
                         </div> 
 
@@ -367,6 +389,7 @@ function Content(props) {
                                         Mahadi Rafi W
                                     </h1>
                                 </div>
+                                  
                                 
                                 
                             </div>
@@ -375,8 +398,60 @@ function Content(props) {
                                     <FontAwesomeIcon icon={faAndroid}></FontAwesomeIcon>
                                     <FontAwesomeIcon icon={faPhp}></FontAwesomeIcon>
                             </div>
-                            <div>
+                            <div className='w-full h-max  flex justify-center mt-2 mb-2'>
+                                <button className='p-3 sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://github.com/MakLo1337/SHUKitaSemua")}} type="button">
+                                    <FontAwesomeIcon icon={faGithub} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Repository
+                                    </h1>
+                                  </span>
+                                </button>
+                            </div>
+                        
+                        </div>
+                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="3">
+                            <div className='W-full h-max p-3 font-reem text-2xl '>
+                                 <h1>
+                                 Semester 3
+                                 </h1>
+                                 
+                            </div>
+                            <div className='w-full h-max p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
+                                <div>
+                                <h1 className='font-bold font-robot text-3xl'>
+                                FamsCard
+                                </h1>
+                                <h2 className='text-sm font-semibold text-slate-500 font-robot'>
+                                    Web Development
+                                </h2>
+                                </div>
+                                <div className='flex flex-row items-center font-reem text-sm space-x-2 '>
+                                    <FontAwesomeIcon icon={faUsers} className='text-slate-600'>
 
+                                    </FontAwesomeIcon>
+                                    <h1>
+                                        N/A
+                                    </h1>
+                                </div>
+                                  
+                                
+                                
+                            </div>
+                            <div className='w-full h-max  p-2 px-4 flex flex-row items-center text-2xl space-x-3'>
+                                    <FontAwesomeIcon icon={faBootstrap}></FontAwesomeIcon>
+                                    <FontAwesomeIcon icon={faLaravel}></FontAwesomeIcon>
+                                    <FontAwesomeIcon icon={faPhp}></FontAwesomeIcon>
+                            </div>
+                            <div className='w-full h-max  flex justify-center mt-2 mb-2'>
+                                <button className='p-3 sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://github.com/AchmadRijalu/Family-Card-Website")}} type="button">
+                                    <FontAwesomeIcon icon={faGithub} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Repository
+                                    </h1>
+                                  </span>
+                                </button>
                             </div>
                         
                         </div>
@@ -419,8 +494,24 @@ function Content(props) {
                                     <img src= {require('../images/tailwind.png')} className='w-6 h-6'></img>
                                     <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
                             </div>
-                            <div>
-
+                            
+                            <div className='w-full h-max  flex flex-col items-center justify-center  mt-2 mb-2'>
+                                <button className='p-3  sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://github.com/AchmadRijalu/BioUp")}} type="button">
+                                    <FontAwesomeIcon icon={faGithub} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Repository
+                                    </h1>
+                                  </span>
+                                </button>
+                                <button className='p-3  sm:bg-neutral-200 mt-3 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://bioup.my.id")}} type="button">
+                                    <FontAwesomeIcon icon={faDesktop} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Website
+                                    </h1>
+                                  </span>
+                                </button>
                             </div>
                         
                         </div>
@@ -463,8 +554,23 @@ function Content(props) {
                                     <FontAwesomeIcon icon={faAndroid}></FontAwesomeIcon>
                                     <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
                             </div>
-                            <div>
-
+                            <div className='w-full h-max  flex flex-col items-center justify-center  mt-2 mb-2'>
+                                <button className='p-3  sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://github.com/AlvinGary/BioUpAndroidApp")}} type="button">
+                                    <FontAwesomeIcon icon={faGithub} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Repository
+                                    </h1>
+                                  </span>
+                                </button>
+                                <button className='p-3  sm:bg-neutral-200 mt-3 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://drive.google.com/file/d/1ShPasGsz-7iuXUdlGgB2fBGj-dk_fwbw/view?usp=sharing")}} type="button">
+                                    <FontAwesomeIcon icon={faDownload} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      Download APK
+                                    </h1>
+                                  </span>
+                                </button>
                             </div>
                         
                         </div>
@@ -502,8 +608,24 @@ function Content(props) {
                             <div className='w-full h-max  p-2 px-4 flex flex-row items-center text-2xl space-x-3'>
                                     <FontAwesomeIcon icon={faUnity}></FontAwesomeIcon>
                             </div>
-                            <div>
-
+                            
+                            <div className='w-full h-max  flex flex-col items-center justify-center  mt-2 mb-2'>
+                                <button className='p-3  sm:bg-neutral-200 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://github.com/AchmadRijalu/TampolSquitoGit")}} type="button">
+                                    <FontAwesomeIcon icon={faGithub} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      View Repository
+                                    </h1>
+                                  </span>
+                                </button>
+                                <button className='p-3  sm:bg-neutral-200 mt-3 sm:text-black sm:hover:text-white transition hover:ease-linear hover:duration-75 duration-75 transition-colors ease-linear sm:hover:bg-contentblack mini:bg-contentblack mini:text-white mini:hover:bg-zinc-700 min-w-1/2 flex flex-row justify-center items-center rounded-lg' onClick={(e) => {e.preventDefault(); window.open("https://drive.google.com/file/d/1_Qa6lUvEy07NTisVIQbZfRYiuM3l8N5m/view?usp=sharing")}} type="button">
+                                    <FontAwesomeIcon icon={faDownload} className="text-lg"></FontAwesomeIcon>
+                                  <span className='font-bold ml-2'>
+                                      <h1>
+                                      Download Code
+                                    </h1>
+                                  </span>
+                                </button>
                             </div>
                         
                         </div>
@@ -521,33 +643,49 @@ function Content(props) {
                         <Carousel breakPoints={breakpoint2} className="gap-x-4" indicators={false} infiniteLoop={true}>
 
 
-                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
-                            
+                        <div className='w-full h-max   rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
                             
                             <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
-                                <img src={require('../images/dicoding1st.JPG')}>
+                                <img src={require('../images/dicoding1st.JPG')} className='hover:animate-pulse'>
                                 
                                 </img>
                                 
-                                
+                            </div>
+                            <div className='w-full h-full flex flex-row justify-center p-3'>
+                            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                             type='button'
+                            onClick={(e) => { e.preventDefault(); window.open("https://www.dicoding.com/certificates/07Z655LG2XQR")}} >
+                                <span class="relative sm:px-5 sm:py-2.5 mini:px-3 mini:py-3 transition-all ease-in duration-75 font-robot bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                View Certificate
+                                </span>
+                            </button>
                             </div>
                             
                         
                         </div> 
-                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                        <div className='w-full h-max  rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
                             
                             
                             <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
-                                <img src={require('../images/dicoding2nd.JPG')}>
+                                <img src={require('../images/dicoding2nd.jpg')}>
                                 
                                 </img>
+                               
                                 
-                                
+                            </div>
+                            <div className='w-full h-full flex flex-row justify-center p-3'>
+                            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                             type='button'
+                            onClick={(e) => { e.preventDefault(); window.open("https://www.dicoding.com/certificates/KEXL30K3WPG2")}} >
+                                <span class="relative sm:px-5 sm:py-2.5 mini:px-3 mini:py-3 transition-all ease-in duration-75 font-robot bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                View Certificate
+                                </span>
+                            </button>
                             </div>
                             
                         
                         </div> 
-                        <div className='w-fullh-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                        <div className='w-fullh-max  rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
                             
                             
                             <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
@@ -555,12 +693,19 @@ function Content(props) {
                                 
                                 </img>
                                 
-                                
                             </div>
-                           
+                            <div className=' flex flex-row justify-center p-3'>
+                            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                             type='button'
+                            onClick={(e) => { e.preventDefault(); window.open("https://www.kaggle.com/learn/certification/achmadrijalua/python")}} >
+                                <span class="relative sm:px-5 sm:py-2.5 mini:px-3 mini:py-3 transition-all ease-in duration-75 font-robot bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                View Certificate
+                                </span>
+                            </button>
+                            </div>
                         
                         </div> 
-                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                        <div className='w-full h-max  rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
                             
                             
                             <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
@@ -570,10 +715,18 @@ function Content(props) {
                                 
                                 
                             </div>
-                            
+                            <div className='  flex flex-row justify-center p-3'>
+                            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                             type='button'
+                            onClick={(e) => { e.preventDefault(); window.open("https://www.dicoding.com/certificates/NVP715GQVPR0")}} >
+                                <span class="relative sm:px-5 sm:py-2.5 mini:px-3 mini:py-3 transition-all ease-in duration-75 font-robot bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                View Certificate
+                                </span>
+                            </button>
+                            </div>
                         
                         </div> 
-                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                        <div className='w-full h-max  rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
                             
                             
                             <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
@@ -583,7 +736,15 @@ function Content(props) {
                                 
                                 
                             </div>
-                            
+                            <div className='w-full h-full flex flex-row justify-center p-3'>
+                            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                             type='button'
+                            onClick={(e) => { e.preventDefault(); window.open("https://www.dicoding.com/certificates/RVZK1E97MPD5")}} >
+                                <span class="relative sm:px-5 sm:py-2.5 mini:px-3 mini:py-3 transition-all ease-in duration-75 font-robot bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                View Certificate
+                                </span>
+                            </button>
+                            </div>
                         
                         </div> 
                         </Carousel>
