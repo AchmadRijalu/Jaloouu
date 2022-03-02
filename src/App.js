@@ -11,6 +11,7 @@ import { render } from '@testing-library/react';
 import {Link} from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner} from '@fortawesome/free-solid-svg-icons'
+
 class Header extends React.Component{
   render(){
     return <div>

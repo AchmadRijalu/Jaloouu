@@ -26,7 +26,9 @@ import { faJs } from '@fortawesome/free-brands-svg-icons'
 import { faAndroid } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faUnity } from '@fortawesome/free-brands-svg-icons'
+
 import { useEffect } from 'react'
+
 function Content(props) {
 
     useEffect = ()=>{
@@ -76,6 +78,10 @@ function Content(props) {
         { width: 850, itemsToShow: 3,itemsToScroll: 3   },
         ]
     
+    const breakpoint2 = [{ width: 1, itemsToShow: 1 , pagination: false, arrows: false},
+        { width: 550, itemsToShow: 2, itemsToScroll: 1, pagination: false},
+        { width: 850, itemsToShow: 2,itemsToScroll: 2   },
+        ]
     
     return (
         
@@ -128,7 +134,7 @@ function Content(props) {
                         </Animated>
                     </div>
                 </div>
-                <div className='w-full min-h-screen bg-contentblack flex flex-col sm:mt-0 mini:mt-10' id='About'>
+                <div className='w-full min-h-screen bg-contentblack flex flex-col sm:mt-0 mini:mt-10 ' id='About'>
                     
                     <div className='w-full h-24  flex flex-col justify-center p-6'>
                         <h1 className='text-white text-4xl font-robot font-bold'>
@@ -170,7 +176,7 @@ function Content(props) {
                                 show?<div className=' h-full  flex sm:flex-row mini:flex-col p-3 ' >
                                 
                                     
-                                    <img src='/images/profpic2.jpg' className='mini:w-80 xl:w-custom h-full hover:animate-pulse transition-opacity hover:delay-150 delay-100 rounded-lg' data-aos = "fade-up"></img>
+                                    <img src= {require('../images/profpic2.jpg')} className='mini:w-80 xl:w-custom h-full hover:animate-pulse transition-opacity hover:delay-150 delay-100 rounded-lg' data-aos = "fade-up"></img>
                                     
                                     <div className=' h-full  flex flex-col justify-center p-2 opacity-80' data-aos = "fade-up">
                                     
@@ -222,7 +228,7 @@ function Content(props) {
                                     </h1>
                                 </div>
                                 <div className='mini:w-full h-full   p-5 font-robot font-medium ' data-aos = "fade-up">
-                                    <ul className='text-white space-y-4'>
+                                    <ul className='text-white space-y-4 lg:text-xl mini:text-md'>
                                         <li>
                                             - 1st Place Cak Cilik Surabaya 2013
                                         </li>
@@ -246,15 +252,15 @@ function Content(props) {
       
                     </div>
                 </div>
-                <div className='w-full min-h-screen flex flex-col 'id="project">                  
+                <div className='w-full min-h-screen flex flex-col mt-4'id="project">                  
                     <div className='w-full h-24   flex flex-col justify-center p-7'>
                         <h1 className='text-white text-4xl font-robot font-bold'>
                             Projects
                         </h1>
                     </div>
-                    <div className='w-full h-full bg-contentblack p-7 '>
+                    
 
-                    <div className='min-w-full h-max flex flex-row space-x-4'>
+                    <div className='min-w-full h-max flex flex-row space-x-4 '>
 
                         <Carousel breakPoints={breakpoint} className="gap-x-4" indicators={false} infiniteLoop={true}>
 
@@ -410,7 +416,7 @@ function Content(props) {
                             <div className='w-full h-max  p-2 px-4 flex flex-row items-center text-2xl space-x-3'>
                                     <FontAwesomeIcon icon={faLaravel}></FontAwesomeIcon>
                                     <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>
-                                    <img src="/images/tailwind.png" className='w-6 h-6'></img>
+                                    <img src= {require('../images/tailwind.png')} className='w-6 h-6'></img>
                                     <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
                             </div>
                             <div>
@@ -504,13 +510,91 @@ function Content(props) {
 
                         </Carousel>
                     </div>
+                 <div className='min-w-full h-full '>
+
+                    <div className='w-full h-24   flex flex-col justify-center p-7 bg-contentblack'>
+                        <h1 className='text-white text-4xl font-robot font-bold'>
+                            Certificates        
+                        </h1>
+                    </div>
+                    <div className='w-full h-full '>
+                        <Carousel breakPoints={breakpoint2} className="gap-x-4" indicators={false} infiniteLoop={true}>
+
+
+                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                            
+                            
+                            <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
+                                <img src={require('../images/dicoding1st.JPG')}>
+                                
+                                </img>
+                                
+                                
+                            </div>
+                            
                         
-                </div>   
+                        </div> 
+                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                            
+                            
+                            <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
+                                <img src={require('../images/dicoding2nd.JPG')}>
+                                
+                                </img>
+                                
+                                
+                            </div>
+                            
+                        
+                        </div> 
+                        <div className='w-fullh-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                            
+                            
+                            <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
+                                <img src={require('../images/kagglePhyton.png')}>
+                                
+                                </img>
+                                
+                                
+                            </div>
+                           
+                        
+                        </div> 
+                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                            
+                            
+                            <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
+                                <img src={require('../images/dicoding3rd.jpg')}>
+                                
+                                </img>
+                                
+                                
+                            </div>
+                            
+                        
+                        </div> 
+                        <div className='w-full h-max bg-white rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                            
+                            
+                            <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
+                                <img src={require('../images/dicoding4th.jpg')}>
+                                
+                                </img>
+                                
+                                
+                            </div>
+                            
+                        
+                        </div> 
+                        </Carousel>
+                    </div>
+
+                 </div>   
                 
                 
             </div>
-            <div className='mini:w-full mini:min-h-screen  flex flex-col p-4'>                  
-                <div className='w-full h-24   flex flex-col justify-center p-7 ' >
+            <div className='mini:w-full mini:min-h-screen  flex flex-col p-4 '>                  
+                <div className='w-full h-24   flex flex-col justify-center p-7  ' >
                     <h1 className='text-white text-4xl font-robot font-bold' id='skills'>
                             Skills
                     </h1>
@@ -525,7 +609,7 @@ function Content(props) {
                         <div className='p-4'>
                         <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                             <div className='w-full'>
-                            <img src='/images/htmlpng.png' className='W-full h-full'>
+                            <img src={require('../images/htmlpng.png')} className=''>
                                 </img>
                             </div>
                                 <div className='w-full h-max p-1 mt-5 bg-contentblack text-white font-robot text-center font-bold'>
@@ -538,7 +622,7 @@ function Content(props) {
                         <div className='p-4'>
                         <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                             <div className='w-full'>
-                            <img src='/images/csspng.png' className='W-full h-full'>
+                            <img src={require('../images/csspng.png')} className=''>
                                 </img>
                             </div>
                                 <div className='w-full h-max p-1 mt-5 bg-contentblack text-white font-robot text-center font-bold'>
@@ -552,7 +636,7 @@ function Content(props) {
                         <div className='p-4'>
                         <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                             <div className='w-full'>
-                            <img src='/images/jspng.png' className='w-full h-full'>
+                            <img src={require('../images/jspng.png')} className='w-full h-full'>
                             </img>
                             </div>
                             
@@ -567,7 +651,7 @@ function Content(props) {
                         <div className='p-4'>
                         <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                             <div className='w-full'>
-                            <img src='/images/javapng.png' className='w-full h-full'>
+                            <img src={require('../images/javapng.png')} className='w-full h-full'>
                             </img>
                             </div>
                             
@@ -581,7 +665,7 @@ function Content(props) {
                         <div className='p-4' >
                         <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                             <div className='w-full'>
-                            <img src='/images/phppng.png' className='w-full h-full'>
+                            <img src={require('../images/phppng.png')} className='w-full h-full'>
                             </img>
                             </div>
                             
@@ -598,7 +682,7 @@ function Content(props) {
                         <div className='p-4'>
                             <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                                 <div className='w-full'>
-                                    <img src='/images/laravelpng.png' className='w-full h-full'>
+                                    <img src={require('../images/laravelpng.png')} className='w-full h-full'>
                                     </img>
                                 </div>
                                 <div className='w-full h-max p-1 mt-4 bg-contentblack text-white font-robot text-center font-bold'>
@@ -613,7 +697,7 @@ function Content(props) {
                            <div className='p-4'>
                            <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                             <div className='w-full'>
-                            <img src='/images/tailwindpng.png' className='w-full h-full'>
+                            <img src={require('../images/tailwindpng.png')} className='w-full h-full'>
                             </img>
                             </div>
                             
@@ -628,7 +712,7 @@ function Content(props) {
                            <div className='p-4'>
                            <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                             <div className='w-full'>
-                            <img src='/images/mysqlpng.png' className='w-full h-full'>
+                            <img src={require('../images/mysqlpng.png')} className='w-full h-full'>
                             </img>
                             </div>
                             
@@ -642,7 +726,7 @@ function Content(props) {
                             <div className='p-4'>
                             <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                                 <div className='w-full'>
-                                    <img src='/images/reactpng.png' className='w-full h-full'>
+                                    <img src={require('../images/reactpng.png')} className='w-full h-full'>
                                     </img>
                                 </div>
                             
@@ -657,7 +741,7 @@ function Content(props) {
                             <div className='p-4'>
                             <div className='w-60 h-60  flex flex-col ml-3 bg-white p-2 rounded-xl'>
                                 <div className='w-full'>
-                                    <img src='/images/csharppng.png' className='w-full h-full'>
+                                    <img src={require('../images/csharppng.png')} className='w-full h-full'>
                                     </img>
                                 </div>
                             
