@@ -791,6 +791,30 @@ function Content(props) {
                             </div>
                         
                         </div> 
+                        
+                        <div className='w-full h-max  rounded-2xl p-1 mr-5' data-aos="fade-right" number="1">
+                            
+                            
+                            <div className=' p-1 px-3  flex flex-col justify-between space-y-5 border-b-2'>
+                                <img src={require('../images/nonAcademic.png')}>
+                                
+                                </img>
+                                
+                                
+                            </div>
+                            <div className='w-full h-full flex flex-row justify-center p-3'>
+                            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                             type='button'
+                            onClick={(e) => { e.preventDefault(); window.open("https://drive.google.com/file/d/1vDPbPvLvHi27DuDPgSQON97Ljl16npWY/view?usp=sharing")}} >
+                                <span class="relative sm:px-5 sm:py-2.5 mini:px-3 mini:py-3 transition-all ease-in duration-75 font-robot bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                View Certificate
+                                </span>
+                            </button>
+                            </div>
+                        
+                        </div> 
+
+                        
                         </Carousel>
                     </div>
 
